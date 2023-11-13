@@ -6,7 +6,7 @@ const Home = () => {
   const [intervalId, setIntervalId] = useState(null);
 
   const startCounter = () => {
-    clearInterval(intervalId); // Limpiar el intervalo anterior, si existe
+    clearInterval(intervalId);
 
     const newIntervalId = setInterval(() => {
       setCounter((prevCounter) => prevCounter + 1);
@@ -20,7 +20,7 @@ const Home = () => {
   };
 
   const regresiva = () => {
-    clearInterval(intervalId); // Limpiar el intervalo anterior, si existe
+    clearInterval(intervalId);
 
     const newIntervalId = setInterval(() => {
       setCounter((prevCounter) => prevCounter - 1);
